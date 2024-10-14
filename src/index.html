@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js day6 array</title>
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <h1 class="my-6 text-4xl text-indigo-600 font-bold text-center">
+      Bài tập js buổi 5 - Xuân - BC77
+    </h1>
+    <!-- Bài 1 -->
+    <section class="area">
+      <div class="container">
+        <h1>Bài tập 1</h1>
+        <h3>Yêu cầu: In tất cả số nguyên dương lẻ / chẵn nhỏ hơn 100.</h3>
+        <button id="printNumber" class="btn2">In số chẵn lẻ</button>
+        <p id="printNumberResult"></p>
+      </div>
+    </section>
+    <!-- Bài 2 -->
+    <section class="area">
+      <div class="container">
+        <h1>Bài tập 2</h1>
+        <h3>
+          Yêu cầu: Tính tổng các số chẵn từ 1 đến n. Với n nhập từ người dùng
+        </h3>
+        <label for="">Chọn số</label>
+        <input
+          id="userNumber"
+          type="number"
+          class="inputDecor"
+          placeholder="Chọn 1 số nguyên dương bất kỳ"
+        />
+        <button id="sumEvenNumber" class="btn2">Tính tổng số chẵn</button>
+        <p id="sumEvenNumberResult">
+          Tổng các số chẵn từ 1 đến số bạn chọn là:
+        </p>
+      </div>
+    </section>
+    <!-- Bài 3  -->
+    <section class="area">
+      <div class="container">
+        <h1>Bài tập 3</h1>
+        <h3>Yêu cầu: Có bao nhiêu số chia hết cho 3 từ 0-1000</h3>
+        <button id="countNumber" class="btn2">Đếm</button>
+        <p id="countNumberResult">Có (...) số chia hết cho 3 từ 0-1000</p>
+      </div>
+    </section>
+    <!-- Bài 4 -->
+    <section class="area">
+      <div class="container">
+        <h1>Bài tập 4</h1>
+        <h3>
+          Yêu cầu: Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ
+          div. Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì
+          background màu xanh
+        </h3>
+        <button id="createDiv" class="btn2">Tạo div</button>
+      </div>
+    </section>
+    <!-- Bài 5 -->
+    <section class="area">
+      <div class="container">
+        <h1>Bài tập 5</h1>
+        <h3>Yêu cầu: Tìm số nguyên dương nhỏ nhất sao cho: 1+2+…+ n > 10000</h3>
+        <button id="foundN" class="btn2">Tìm n</button>
+        <p id="foundNResult">
+          Số nguyên dương nhỏ nhất (n) sao cho tổng 1+2+…+ n > 10000 là:
+        </p>
+      </div>
+    </section>
+    <!-- Bài 6 -->
+    <section id="sumSn" class="area">
+      <div class="container">
+        <h1>Bài tập 6</h1>
+        <h3>
+          Yêu cầu: Viết chương trình nhập vào 2 số x, n, tính tổng:
+          S(n)=x+x^2+x^3+…+x^n (Sử dụng vòng lặp và hàm)
+        </h3>
+        <form action="#sumSn">
+          <label for="">Số x</label>
+          <input
+            id="baseNumber"
+            type="number"
+            placeholder="Nhập vào cơ số x"
+            class="inputDecor"
+            required
+          />
+          <label for="">Số n</label>
+          <input
+            id="termNumber"
+            type="number"
+            placeholder="Nhập vào số hạng n"
+            class="inputDecor"
+            required
+            min="0"
+          />
+          <button id="btnSumSn" class="btn2">Tính tổng S(n)</button>
+        </form>
+        <p id="sumSnResult"></p>
+      </div>
+    </section>
+    <!-- Bài 7 -->
+    <section id="exercise7" class="area">
+      <div class="container">
+        <h1>Bài tập 7</h1>
+        <h3>Yêu cầu: Nhập vào n. Tính giai thừa 1×2×…×n</h3>
+        <form id="factorial" action="#exercise7">
+          <label for="">Nhập n</label>
+          <input
+            id="number"
+            type="number"
+            required
+            min="0"
+            step="1"
+            placeholder="Nhập vào 1 số nguyên không âm"
+            class="inputDecor"
+          />
+          <button class="btn2">Tính giai thừa</button>
+        </form>
+        <p id="factorialResult"></p>
+      </div>
+    </section>
+    <!-- Bài 8 -->
+    <section id="listNumber" class="area">
+      <div class="container">
+        <h1>Bài tập 8</h1>
+        <h3>
+          Yêu cầu: Viết chương trình có một input, một button. Khi click vào
+          button thì in ra các số nguyên từ 1 tới giá trị của input
+        </h3>
+        <form id="integer" action="#listNumber">
+          <label for="">Nhập số</label>
+          <input
+            id="inputInteger"
+            type="number"
+            class="inputDecor"
+            placeholder="Nhập 1 số nguyên bất kì"
+            required
+            step="1"
+          />
+          <button class="btn2">In số nguyên</button>
+        </form>
+        <p id="integerResult"></p>
+      </div>
+    </section>
+
+    <!-- MY JS  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
